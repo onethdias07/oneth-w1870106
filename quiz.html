@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/quiz.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- javascript -->
+  <script>
+    function display() {
+      var mark = 0
+      if (document.getElementById("answer-1").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon1 = document.getElementById("reply-1");
+        icon1.style.display = "block";
+
+      }
+      if (document.getElementById('answer-2').checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon2 = document.getElementById("reply-2");
+        icon2.style.display = "block";
+      }
+      if (document.getElementById("answer-3").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon3 = document.getElementById("reply-3");
+        icon3.style.display = "block";
+      }
+      if (document.getElementById("answer-4").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon4 = document.getElementById("reply-4");
+        icon4.style.display = "block";
+      }
+      if (document.getElementById("answer-5").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon5 = document.getElementById("reply-5");
+        icon5.style.display = "block";
+      }
+      if (document.getElementById("answer-6").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon6 = document.getElementById("reply-6");
+        icon6.style.display = "block";
+      }
+      if (document.getElementById("answer-7").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon7 = document.getElementById("reply-7");
+        icon7.style.display = "block";
+      }
+      if (document.getElementById("answer-8").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon8 = document.getElementById("reply-8");
+        icon8.style.display = "block";
+      }
+      if (document.getElementById("answer-9").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon9 = document.getElementById("reply-9");
+        icon9.style.display = "block";
+      }
+      if (document.getElementById("answer-10").checked) {
+        mark += 2;
+        document.getElementById("p").innerHTML = mark;
+        var icon10 = document.getElementById("reply-10");
+        icon10.style.display = "block";
+      }
+      // incorrect posibilities
+      if (document.getElementById("incorrect-1").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc1 = document.getElementById("reply-1");
+        inc1.style.display = "block";
+
+        var inc2 = document.getElementById("inc-reply1-1");
+        inc2.style.display = "block";
+
+      }
+      if (document.getElementById("incorrect2-1").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc3 = document.getElementById("reply-1");
+        inc3.style.display = "block";
+
+        var inc4 = document.getElementById("inc-reply2-1");
+        inc4.style.display = "block";
+      }
+      if (document.getElementById("incorrect-2").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc5 = document.getElementById("reply-2");
+        inc5.style.display = "block";
+
+        var inc6 = document.getElementById("inc-reply1-2");
+        inc6.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-2").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc7 = document.getElementById("reply-2");
+        inc7.style.display = "block";
+
+        var inc8 = document.getElementById("inc-reply2-2");
+        inc8.style.display = "block";
+      }
+      if (document.getElementById("incorrect-3").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc9 = document.getElementById("reply-3");
+        inc9.style.display = "block";
+
+        var inc10 = document.getElementById("inc-reply2-3");
+        inc10.style.display = "block";
+      }
+
+      if (document.getElementById("incorrect2-3").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc11 = document.getElementById("reply-3");
+        inc11.style.display = "block";
+
+        var inc12 = document.getElementById("inc-reply1-3");
+        inc12.style.display = "block";
+      }
+
+      if (document.getElementById("incorrect-4").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+
+        var inc13 = document.getElementById("reply-4");
+        inc13.style.display = "block";
+
+        var inc14 = document.getElementById("inc-reply1-4");
+        inc14.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-4").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+
+        var inc15 = document.getElementById("reply-4");
+        inc15.style.display = "block";
+
+        var inc16 = document.getElementById("inc-reply2-4");
+        inc16.style.display = "block";
+      }
+      if (document.getElementById("incorrect-5").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc17 = document.getElementById("reply-5");
+        inc17.style.display = "block";
+
+        var inc18 = document.getElementById("inc-reply1-5");
+        inc18.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-5").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc19 = document.getElementById("reply-5");
+        inc19.style.display = "block";
+
+        var inc20 = document.getElementById("inc-reply2-5");
+        inc20.style.display = "block";
+      }
+      if (document.getElementById("incorrect-6").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc21 = document.getElementById("reply-6");
+        inc21.style.display = "block";
+
+        var inc22 = document.getElementById("inc-reply2-6");
+        inc22.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-6").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc23 = document.getElementById("reply-6");
+        inc23.style.display = "block";
+
+        var inc24 = document.getElementById("inc-reply1-6");
+        inc24.style.display = "block";
+      }
+      if (document.getElementById("incorrect-7").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc25 = document.getElementById("reply-7");
+        inc25.style.display = "block";
+
+        var inc26 = document.getElementById("inc-reply1-7");
+        inc26.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-7").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc27 = document.getElementById("reply-7");
+        inc27.style.display = "block";
+
+        var inc28 = document.getElementById("inc-reply2-7");
+        inc28.style.display = "block";
+      }
+      if (document.getElementById("incorrect-8").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc29 = document.getElementById("reply-8");
+        inc29.style.display = "block";
+
+        var inc30 = document.getElementById("inc-reply1-8");
+        inc30.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-8").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc31 = document.getElementById("reply-8");
+        inc31.style.display = "block";
+
+        var inc32 = document.getElementById("inc-reply2-8");
+        inc32.style.display = "block";
+      }
+      if (document.getElementById("incorrect-9").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc33 = document.getElementById("reply-9");
+        inc33.style.display = "block";
+
+        var inc34 = document.getElementById("inc-reply1-9");
+        inc34.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-9").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc35 = document.getElementById("reply-9");
+        inc35.style.display = "block";
+
+        var inc36 = document.getElementById("inc-reply2-9");
+        inc36.style.display = "block";
+      }
+      if (document.getElementById("incorrect-10").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc37 = document.getElementById("reply-10");
+        inc37.style.display = "block";
+
+        var inc38 = document.getElementById("inc-reply2-10");
+        inc38.style.display = "block";
+      }
+      if (document.getElementById("incorrect2-10").checked) {
+        mark += -1;
+        document.getElementById("p").innerHTML = mark;
+
+        var inc39 = document.getElementById("reply-10");
+        inc39.style.display = "block";
+
+        var inc40 = document.getElementById("inc-reply1-10");
+        inc40.style.display = "block";
+      }
+
+      var x = document.getElementById("results");
+      x.style.display = "block";
+
+      var y = document.getElementById("results-link")
+      y.style.display = "block";
+
+
+      if (mark <= 5) {
+        var element = document.getElementById("results");
+        element.style.backgroundColor = "#FC4F4F";
+        document.getElementById("feedback").innerHTML = "not enough :( you need to improve on your music knowledge.";
+      } else if (mark <= 7 && mark > 5) {
+        var element = document.getElementById("results");
+        element.style.backgroundColor = "#F2FA5A";
+        document.getElementById("feedback").innerHTML = "not bad you have scored an average mark.";
+      } else if (mark <= 20 && mark > 7) {
+        var element = document.getElementById("results");
+        element.style.backgroundColor = "#6BCB77";
+        document.getElementById("feedback").innerHTML = "exellent! you have taken an above average mark!";
+
+      }
+
+
+    }
+  </script>
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+  <h2 id="heading" class="main-heading"><i class="fas fa-guitar guit"></i>Multiple-Choice Quiz</h2>
+
+  <p class="main-para">This is a quick test to see how much you know about music in general.</p>
+
+
+  <form class="quiz-questions">
+
+    <p class="questions"> 1. What is the most used instrument?</p>
+
+    <i id="reply-1" class="fas fa-check"></i> <input class="answer" type="radio" id="answer-1" name="question-1" value="piano" required>
+      <label for="answer-1">Piano</label><br>
+
+    <i id="inc-reply1-1" class="fas fa-times"></i> <input type="radio" id="incorrect-1" name="question-1" value="guitar">
+      <label for="incorrect-1">Gutair</label><br>
+
+    <i id="inc-reply2-1" class="fas fa-times"></i> <input type="radio" id="incorrect2-1" name="question-1" value="violin">
+      <label for="incorrect2-1">Violin</label>
+
+
+
+    <br>
+
+    <p class="questions"> 2. When you press a key on the instrument it causes a small hammer inside to hit a string or strings. which instrument is described here?</p>
+      <i id="reply-2" class="fas fa-check"></i><input type="radio" id="answer-2" name="question-2" value="piano" required>
+      <label for="answer-2">Piano </label><br>
+
+    <i id="inc-reply1-2" class="fas fa-times"></i>  <input type="radio" id="incorrect-2" name="question-2" value="harmonium">
+      <label for="incorrect-2">Harmonium</label><br>
+
+     <i id="inc-reply2-2" class="fas fa-times"></i> <input type="radio" id="incorrect2-2" name="question-2" value="organ">
+      <label for="incorrect2-2">Organ</label>
+
+    <br>
+
+    <p class="questions"> 3. What is the oldest instrument in the string family?</p>
+     <i id="inc-reply1-3" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect2-3" name="question-3" value="cello" required>
+      <label for="incorrect2-3">Cello</label><br>
+
+     <i id="inc-reply2-3" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect-3" name="question-3" value="violin">
+      <label for="incorrect-3">Violin</label><br>
+
+    <i id="reply-3" class="fas fa-check"></i>  <input type="radio" id="answer-3" name="question-3" value="Harp">
+      <label for="answer-3">Harp</label>
+
+    <br>
+
+    <p class="questions"> 4. How many pedals does a grand piano have?</p>
+    <i id="inc-reply1-4" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect-4" name="question-4" value="1" required>
+      <label for="incorrect-4">1</label><br>
+
+    <i id="reply-4" class="fas fa-check"></i>  <input type="radio" id="answer-4" name="question-4" value="3">
+      <label for="answer-4">3</label><br>
+
+    <i id="inc-reply2-4" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect2-4" name="question-4" value="2">
+      <label for="incorrect2-4">2</label>
+
+    <br>
+
+    <p class="questions"> 5. which of this is not a type of guitar.</p>
+    <i id="reply-5" class="fas fa-check"></i>   <input type="radio" id="answer-5" name="question-5" value="fife" required>
+      <label for="answer-5">Fife</label><br>
+
+    <i id="inc-reply1-5" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect-5" name="question-5" value="electric">
+      <label for="incorrect-5">Electric</label><br>
+
+    <i id="inc-reply2-5" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect2-5" name="question-5" value="bass">
+      <label for="incorrect2-5">Bass</label>
+
+    <br>
+
+    <p class="questions"> 6. A guitar is usually considered which part of this family of instruments?</p>
+    <i id="inc-reply1-6" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect2-6" name="question-6" value="wood-wind" required>
+      <label for="incorrect2-6">Wood winds</label><br>
+
+    <i id="inc-reply2-6" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect-6" name="question-6" value="bass">
+      <label for="incorrect-6">Bass</label><br>
+
+     <i id="reply-6" class="fas fa-check"></i> <input type="radio" id="answer-6" name="question-6" value="Percussion">
+      <label for="answer-6">Percussion</label>
+
+    <br>
+
+    <p class="questions"> 7. How many keys does a standard piano have?</p>
+    <i id="inc-reply1-7" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect-7" name="question-7" value="100" required>
+      <label for="incorrect-7">100</label><br>
+    <i id="inc-reply2-7" class="fas fa-times"></i>  <input class="incorrect" type="radio" id="incorrect2-7" name="question-7" value="80">
+      <label for="incorrect2-7">80</label><br>
+     <i id="reply-7" class="fas fa-check"></i> <input type="radio" id="answer-7" name="question-7" value="88">
+      <label for="answer-7">88</label>
+
+    <br>
+
+    <p class="questions"> 8. Which of these instruments is the biggest?</p>
+    <i id="reply-8" class="fas fa-check"></i>   <input type="radio" id="answer-8" name="question-8" value="Contrabass" required>
+      <label for="answer-8">Contrabass</label><br>
+
+     <i id="inc-reply1-8" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect-8" name="question-8" value="Cello">
+      <label for="incorrect-8">Cello</label><br>
+
+    <i id="inc-reply2-8" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect2-8" name="question-8" value="violin">
+      <label for="incorrect2-8">Violin</label>
+
+    <br>
+
+    <p class="questions"> 9. How many strings does guitar usually have?</p>
+    <i id="inc-reply1-9" class="fas fa-times"></i>   <input class="incorrect" type="radio" id="incorrect-9" name="question-9" value="4" required>
+      <label for="incorrect-9">4</label><br>
+
+    <i id="reply-9" class="fas fa-check"></i>   <input type="radio" id="answer-9" name="question-9" value="6">
+      <label for="answer-9">6</label><br>
+
+    <i id="inc-reply2-9" class="fas fa-times"></i>   <input class="incorrect" type="radio" id="incorrect2-9" name="question-9" value="7">
+      <label for="incorrect2-9">7</label>
+
+    <br>
+
+    <p id="lol" class="questions"> 10. Which instrument did Sherlock Holmes play?</p>
+    <i id="inc-reply1-10" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect2-10" name="question-10" value="flute" required>
+      <label for="incorrect2-10">Flute</label><br>
+
+    <i id="inc-reply2-10" class="fas fa-times"></i> <input class="incorrect" type="radio" id="incorrect-10" name="question-10" value="Guitar">
+      <label for="incorrect-10">Guitar</label><br>
+
+    <i id="reply-10" class="fas fa-check"></i>   <input type="radio" id="answer-10" name="question-10" value="violin">
+      <label for="answer-10">Violin</label> <br>
+    <hr>
+
+
+
+  </form>
+  <div class="footer">
+    <button class="main-but" type="button" onclick="display()">
+      Submit
+    </button>
+    <a id="results-link" href="#results">scroll to see results</a>
+  </div>
+  <div id="results">
+    <h1 class="results-head">Results</h1>
+    <h1 class="score">Your Score Is <a id="p"></a>/20</h1>
+    <p id="feedback"></p>
+    <p class="timer-para">Time You Took To Complete The Quiz Was</p> <a href="#"></a>
+    <div class="div-performance">
+      <a class="performance" href="#heading">click to scroll through your performance.</a>
+    </div>
+
+
+  </div>
+
+
+  <div class="footer1">
+    <p class="headings">© MCQ QUIZ</p>
+    <p class="creator-link">Created By Oneth Dias | <a href="https://www.instagram.com/oneth_diaz/" class="footer-font fab fa-instagram"></a> | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=theonethdias@gmail.com"
+        class="footer-font fas fa-envelope"></a></p>
+    <a class="pgeditor" href="file:///D:/Web%20devolopment/student-3/page-editor.html">Page Editor</a>
+  </div>
+
+
+
+</body>
+
+</html>

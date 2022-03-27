@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  background-color: #FDF6EC;
+}
+
+.guitar-img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.nav {
+  padding: 35px;
+  text-decoration: none;
+  color: #F7CCAC;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.nav:hover {
+  color: #C69B7B;
+}
+
+.nav-bar {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  font-variant: small-caps;
+  margin-bottom: 0;
+  font-family: 'Merriweather', serif;
+}
+
+.piano {
+  background-image: url('https://bit.ly/3NjUXr1');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+#paino-head {
+  text-align: center;
+  color: #fbefcc;
+  font-family: monospace;
+  font-size: 70px;
+}
+
+.h2-head {
+  text-align: left;
+  color: white;
+  font-family: Times New Roman;
+  font-size: 40px;
+}
+
+dt {
+  text-align: left;
+  color: white;
+  font-family: Times New Roman;
+  font-size: 30px;
+}
+
+.para, ol, dd {
+  color: black;
+  font-family: Times New Roman;
+  font-size: 25px;
+  background-color: #fbefcc;
+}
+
+.paino-img {
+  width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 7px solid;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fbefcc;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.guitar {
+  margin: 0 15% 50px 15%;
+  background-color: #F3E9DD;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.main-para {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.sub-head2 {
+  font-family: 'Merriweather', serif;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.sub-head {
+  font-family: 'Merriweather', serif;
+  padding: 20px;
+  font-size: 30px;
+  display: inline;
+}
+
+.pa{
+    font-family: "Lato", sans-serif;
+    padding: 15px;
+}
+
+.g-nav{
+  text-decoration: none;
+  padding: 4px;
+  color: red;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.g-nav:hover{
+  color: #FC4F4F;
+}
+
+.img{
+  text-align: center;
+}
+
+.drum-img{
+
+ padding: 15px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+#content{
+    margin: 0 5% 50px 5%;
+
+}
+
+.drum-head{
+  text-align: center;
+  color: #3A3845;
+}
+
+.drums-div{
+  text-align: center;
+}
